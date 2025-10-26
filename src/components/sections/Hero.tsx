@@ -155,10 +155,11 @@ export default function Hero({ onBookAppointment }: HeroProps) {
                       className="w-full h-full"
                     >
                       <img
-                        src="/doctor1.png"
-                        alt="Doctor"
-                        className="w-full h-full object-cover"
-                      />
+                          src="./doctor1.png"
+                          alt="Doctor"
+                          loading="eager"
+                          className="w-full h-full object-cover"
+                        />
                     </motion.div>
                   </div>
                   <motion.div 
@@ -200,8 +201,9 @@ export default function Hero({ onBookAppointment }: HeroProps) {
                         className="w-full h-full"
                       >
                         <img
-                          src="doctor2.jpeg"
+                          src="./team.jpg"
                           alt="Medical Team"
+                          loading="eager"
                           className="w-full h-full object-cover"
                         />
                       </motion.div>

@@ -7,4 +7,19 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
+  build: {
+    sourcemap: true,
+    cssMinify: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'vendor': ['react', 'react-dom', 'framer-motion'],
+        }
+      }
+    }
+  },
+  server: {
+    port: 5173,
+    strictPort: true,
+  }
 });
